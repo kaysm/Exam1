@@ -17,7 +17,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 1  READ the doc-string for the is_prime function defined below.
+# DONE: 1  READ the doc-string for the is_prime function defined below.
 # You do NOT need to understand its implementations,
 # just its specification (per the doc-string).
 # You should  ** CALL **  functions as needed in implementing the
@@ -58,7 +58,7 @@ def is_prime(n):
 
 def test_count_primes():
     ###############################################################################
-    # TODO: 2  READ the doc-string for the count_primes function below,
+    # DONE: 2  READ the doc-string for the count_primes function below,
     #   but DO NOT begin coding.
     # After you have READ this, change its _TODO_ to DONE.
     ###############################################################################
@@ -74,10 +74,14 @@ def test_count_primes():
     ###############################################################################
     print()
     print('Your tests will go here!')
+    print('Test 2 of count primes')
+    print('m = 1 and n = 3')
+    print('Expected count = 2')
+    print('Actual count = ', count_primes(1, 3))
     return
 
 
-def count_primes(m,n):
+def count_primes(m, n):
     """
     #    What comes in:
     #      -- A positive integer m.

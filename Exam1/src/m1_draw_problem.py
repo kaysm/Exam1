@@ -30,7 +30,7 @@ def test_draw_a_picture():
     print('###################################################')
     print('Test 1 of draw_a_picture.')
     print('Called with point1 =', point1)
-    print( 'n =', n, ' color = blue')
+    print('n =', n, ' color = blue')
     print('###################################################')
     draw_a_picture(point1, n, 'blue', test_window)
 
@@ -40,7 +40,7 @@ def test_draw_a_picture():
     print('###################################################')
     print('Test 2 of draw_a_picture.')
     print('Called with point2 =', point2)
-    print( 'n =', n, ' color = green')
+    print('n =', n, ' color = green')
     print('###################################################')
     draw_a_picture(point2, n, 'green', test_window)
     test_window.close_on_mouse_click()
@@ -79,7 +79,7 @@ def test_draw_a_picture():
 #       :type window: rg.RoseWindow
 #     """
 # -------------------------------------------------------------------------
-#  TODO: 1. Implement and test the draw_a_picture function.
+#  DONE: 1. Implement and test the draw_a_picture function.
 #           Tests have been written for you (above in main).
 #  We suggest breaking this into multiple commits.
 #     Can you show the right circle?
@@ -91,11 +91,13 @@ def test_draw_a_picture():
 #         renders with a half-second pause after rendering.
 ############################################################################
 # -------------------------------------------------------------------------
-#
-#
-
 def draw_a_picture(point, n, color, window):
-
+    for k in range(n):
+        wk = rg.Circle(point, 50)
+        wk.fill_color = color
+        wk.attach_to(window)
+        point.move_by(25, 15)
+        window.render(.5)
     return
 
 
